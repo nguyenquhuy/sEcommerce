@@ -1,0 +1,6 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!-- Domain layer: pure C#, no framework / NuGet dependencies.
+       Build settings inherited from /Directory.Build.props -->
+
+</Project>

@@ -1,0 +1,68 @@
+## ───────────── Build output ─────────────
+bin/
+obj/
+out/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+artifacts/
+*.binlog
+project.lock.json
+project.fragment.lock.json
+
+## ───────────── IDE / editor ─────────────
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.DotSettings.user
+
+## ───────────── Test / coverage ─────────────
+[Tt]est[Rr]esult*/
+TestResults/
+coverage/
+*.coverage
+*.coveragexml
+*.trx
+
+## ───────────── Secrets & credentials (NEVER commit) ─────────────
+# Real secrets go in `dotnet user-secrets` (dev) or environment variables / GitHub Secrets (prod/CI),
+# NOT in committed appsettings files. Keep appsettings*.json with PLACEHOLDERS only.
+secrets.json
+appsettings.*.local.json
+appsettings.Local.json
+.env
+.env.*
+!.env.example
+*.pfx
+*.p12
+*.key
+*.pem
+
+## ───────────── Local data / uploads / logs ─────────────
+# Local file uploads (FileStorage local provider)
+wwwroot/uploads/
+uploads/
+**/App_Data/
+# Local dev databases (SQLite / LocalDB)
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.mdf
+*.ldf
+# Logs (Serilog file sink, Seq exports)
+logs/
+*.log
+
+## ───────────── Docker local ─────────────
+docker/data/
+docker/.env
+
+## ───────────── OS files ─────────────
+.DS_Store
+Thumbs.db

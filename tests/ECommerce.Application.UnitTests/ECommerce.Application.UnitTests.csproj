@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <!-- Add test packages (xUnit, FluentAssertions, Moq, coverlet.collector,
+       Microsoft.NET.Test.Sdk) when you start writing tests. -->
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\ECommerce.Application\ECommerce.Application.csproj" />
+  </ItemGroup>
+
+</Project>
