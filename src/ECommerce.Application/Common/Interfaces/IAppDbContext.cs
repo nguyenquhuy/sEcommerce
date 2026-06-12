@@ -29,5 +29,8 @@ public interface IAppDbContext
 
     DbSet<Review> Reviews { get; }
 
+    DbSet<ReturnRequest> ReturnRequests { get; }
+    DbSet<ReturnItem> ReturnItems { get; }
+
     Task<int> SaveChangesAsync(CancellationToken cancellationToken = default);
 }

@@ -20,6 +20,8 @@ public class UserConfiguration : IEntityTypeConfiguration<User>
         builder.Property(x => x.IsEmailVerified).HasColumnName("IS_EMAIL_VERIFIED").HasDefaultValue(false);
         builder.Property(x => x.EmailVerifyToken).HasColumnName("EMAIL_VERIFY_TOKEN").HasMaxLength(200);
         builder.Property(x => x.EmailVerifyExpiry).HasColumnName("EMAIL_VERIFY_EXPIRY");
+        builder.Property(x => x.PasswordResetToken).HasColumnName("PASSWORD_RESET_TOKEN").HasMaxLength(200);
+        builder.Property(x => x.PasswordResetExpiry).HasColumnName("PASSWORD_RESET_EXPIRY");
         builder.Property(x => x.IsActive).HasColumnName("IS_ACTIVE").HasDefaultValue(true);
         builder.Property(x => x.LoyaltyPoint).HasColumnName("LOYALTY_POINT").HasDefaultValue(0);
         builder.Property(x => x.LastLoginAt).HasColumnName("LAST_LOGIN_AT");

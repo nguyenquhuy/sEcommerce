@@ -16,6 +16,7 @@ public class CartConfiguration : IEntityTypeConfiguration<Cart>
         builder.Property(x => x.SessionId).HasColumnName("SESSION_ID").HasMaxLength(200);
         builder.Property(x => x.CouponId).HasColumnName("COUPON_ID");
         builder.Property(x => x.ExpiresAt).HasColumnName("EXPIRES_AT");
+        builder.Property(x => x.ReservedUntil).HasColumnName("RESERVED_UNTIL");
         builder.ConfigureAuditColumns();
 
         builder.HasIndex(x => x.UserId).HasDatabaseName("IX_CARTS_USER");

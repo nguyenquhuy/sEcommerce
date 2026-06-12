@@ -15,6 +15,7 @@ public class CartItemConfiguration : IEntityTypeConfiguration<CartItem>
         builder.Property(x => x.CartId).HasColumnName("CART_ID");
         builder.Property(x => x.VariantId).HasColumnName("VARIANT_ID");
         builder.Property(x => x.Quantity).HasColumnName("QUANTITY");
+        builder.Property(x => x.ReservedQuantity).HasColumnName("RESERVED_QUANTITY").HasDefaultValue(0);
         builder.ConfigureAuditColumns();
 
         builder.HasIndex(x => new { x.CartId, x.VariantId }).IsUnique().HasDatabaseName("UQ_CART_ITEMS_CART_VARIANT");

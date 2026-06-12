@@ -13,6 +13,8 @@ public class User : AuditableEntity
     public bool IsEmailVerified { get; set; }
     public string? EmailVerifyToken { get; set; }
     public DateTime? EmailVerifyExpiry { get; set; }
+    public string? PasswordResetToken { get; set; }
+    public DateTime? PasswordResetExpiry { get; set; }
     public bool IsActive { get; set; } = true;
     public int LoyaltyPoint { get; set; }
     public DateTime? LastLoginAt { get; set; }

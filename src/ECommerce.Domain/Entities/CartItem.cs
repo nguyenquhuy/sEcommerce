@@ -9,6 +9,9 @@ public class CartItem : AuditableEntity
     public Guid VariantId { get; set; }
     public int Quantity { get; set; }
 
+    /// <summary>Units currently reserved in inventory for this line (BR-02); 0 when not in checkout.</summary>
+    public int ReservedQuantity { get; set; }
+
     // Navigation
     public Cart Cart { get; set; } = null!;
     public ProductVariant Variant { get; set; } = null!;

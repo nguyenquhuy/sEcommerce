@@ -34,6 +34,10 @@ public class AppDbContext : DbContext, IAppDbContext
 
     // Review
     public DbSet<Review> Reviews => Set<Review>();
+
+    // Returns
+    public DbSet<ReturnRequest> ReturnRequests => Set<ReturnRequest>();
+    public DbSet<ReturnItem> ReturnItems => Set<ReturnItem>();
     // New tables only need an entity + IEntityTypeConfiguration — they are
     // picked up automatically by ApplyConfigurationsFromAssembly below.
 

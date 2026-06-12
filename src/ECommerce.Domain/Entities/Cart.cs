@@ -10,6 +10,9 @@ public class Cart : AuditableEntity
     public Guid? CouponId { get; set; }
     public DateTime? ExpiresAt { get; set; }
 
+    /// <summary>When the current stock reservation (BR-02) expires; null = no active reservation.</summary>
+    public DateTime? ReservedUntil { get; set; }
+
     // Navigation
     public User? User { get; set; }
     public Coupon? Coupon { get; set; }
